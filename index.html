@@ -1,10 +1,374 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio Adudu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adudu's Portfolio | Computer Enthusiast</title>
+    <meta name="description" content="Portfolio of a high school student passionate about computer troubleshooting, operating systems, and building personal servers.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 </head>
 <body>
-<h1>Halo, ini website pertamaku</h1>
-<p>Spek Pc : <br> Intel Core i5-4690<br>Ram 8GB DDR3<br>HDD 500GB<br>PSU Varro Ezmax 600W</p>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo"><Adudu/></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hardware">My Setup</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">🎓 High School Student & Tech Enthusiast</span>
+            <h1>Hi, I'm <span class="highlight">Adudu</span></h1>
+            <p class="hero-subtitle typing-effect">I love troubleshooting computers, experimenting with operating systems, and building my own servers.</p>
+            <p class="hero-description">
+                A curious high school student always eager to learn new things about technology. 
+                From fixing mysterious computer issues to trying out the latest Linux distros and hosting my own services.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Years Learning</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="8">0</span>
+                    <span class="stat-label">OS Tried</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Servers Hosted</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About <span class="title-accent">Me</span></h2>
+            <p>Get to know the person behind the screen</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-image fade-in">
+                <div class="about-image-placeholder"></div>
+            </div>
+            <div class="about-content fade-in">
+                <h3>A Passionate Learner in Technology</h3>
+                <p>
+                    I'm a high school student with a deep passion for computers and technology. 
+                    While I'm still in school, I spend most of my free time exploring the world of 
+                    IT, learning new skills, and working on personal projects.
+                </p>
+                <p>
+                    My journey started with curiosity – I wanted to know why computers do what they do. 
+                    Now, I enjoy every bit of troubleshooting, experimenting with different operating systems, 
+                    and setting up my own servers to host various services.
+                </p>
+                <div class="about-tags">
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Self-Learning</span>
+                    <span class="tag">Curiosity</span>
+                    <span class="tag">Patience</span>
+                    <span class="tag">Creativity</span>
+                    <span class="tag">Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-title">
+            <h2>My <span class="title-accent">Skills</span></h2>
+            <p>Technical abilities I've developed over time</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🔧</div>
+                <h3>Computer Troubleshooting</h3>
+                <p>Diagnosing and fixing hardware and software issues. From BSOD errors to network problems.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar troubleshooting"></div>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">💿</div>
+                <h3>Operating Systems</h3>
+                <p>Trying and testing various OS: Windows, Linux distros, and even some exotic systems.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar operating-systems"></div>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🖥️</div>
+                <h3>Server Management</h3>
+                <p>Setting up and managing personal servers for web hosting, media streaming, and more.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar server"></div>
+                </div>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">⌨️</div>
+                <h3>Programming</h3>
+                <p>Learning to code with Python, HTML/CSS, and some basic shell scripting.</p>
+                <div class="skill-progress">
+                    <div class="skill-progress-bar coding"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <div class="section-title">
+            <h2>My <span class="title-accent">Interests</span></h2>
+            <p>What I love to do in my free time</p>
+        </div>
+        <div class="interests-grid">
+            <div class="interest-card fade-in">
+                <div class="interest-icon">🔍</div>
+                <h3>Troubleshooting</h3>
+                <p>I enjoy the challenge of finding and fixing computer problems. There's something satisfying about solving a tricky issue!</p>
+                <ul class="interest-list">
+                    <li>Hardware diagnostics</li>
+                    <li>Software debugging</li>
+                    <li>Network troubleshooting</li>
+                    <li>System optimization</li>
+                </ul>
+            </div>
+            <div class="interest-card fade-in">
+                <div class="interest-icon">💻</div>
+                <h3>Operating Systems</h3>
+                <p>I love experimenting with different operating systems and seeing what each one offers.</p>
+                <ul class="interest-list">
+                    <li>Ubuntu & Debian</li>
+                    <li>Arch Linux</li>
+                    <li>Windows (dual boot)</li>
+                    <li>Server OS (CentOS, Rocky)</li>
+                </ul>
+            </div>
+            <div class="interest-card fade-in">
+                <div class="interest-icon">🌐</div>
+                <h3>Personal Servers</h3>
+                <p>Building and maintaining my own servers to host various services and learn about networking.</p>
+                <ul class="interest-list">
+                    <li>Web server (nginx)</li>
+                    <li>Media server (Plex/Jellyfin)</li>
+                    <li>File server ( Samba)</li>
+                    <li>Home lab setup</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>My <span class="title-accent">Projects</span></h2>
+            <p>Some things I've worked on</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">🖥️</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Linux</span>
+                        <span class="project-tag">Server</span>
+                    </div>
+                    <h3>Home Lab Server</h3>
+                    <p>Built a personal server for hosting multiple services including a web server, media streaming, and file storage.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">🐧</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Linux</span>
+                        <span class="project-tag">Experiment</span>
+                    </div>
+                    <h3>Multi-Boot System</h3>
+                    <p>Set up a system with Windows and multiple Linux distributions for testing and learning different OS environments.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">🔧</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Troubleshooting</span>
+                        <span class="project-tag">Help</span>
+                    </div>
+                    <h3>PC Repair Blog</h3>
+                    <p>Documented solutions to common computer problems I've encountered and helped fix for friends and family.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">📁</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Network</span>
+                        <span class="project-tag">NAS</span>
+                    </div>
+                    <h3>Personal NAS</h3>
+                    <p>Created a network-attached storage solution for backup and file sharing within my home network.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">🌍</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Web</span>
+                        <span class="project-tag">Hosting</span>
+                    </div>
+                    <h3>Self-Hosted Website</h3>
+                    <p>Learned to host my own website using a VPS and nginx, gaining valuable server management experience.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-image">🎮</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="project-tag">Gaming</span>
+                        <span class="project-tag">Server</span>
+                    </div>
+                    <h3>Game Server Hosting</h3>
+                    <p>Set up and managed game servers for friends to play together, learning about port forwarding and server configuration.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Setup Section -->
+    <section id="hardware" class="hardware-section fade-in">
+        <h2>My <span class="title-accent">Setup</span></h2>
+        <div class="hardware-grid">
+            <div class="hardware-item">
+                <div class="hardware-icon">🖥️</div>
+                <h4>Desktop PC</h4>
+                <p>Intel Core i5-4690</p>
+            </div>
+            <div class="hardware-item">
+                <div class="hardware-icon">💾</div>
+                <h4>RAM</h4>
+                <p>8GB DDR3</p>
+            </div>
+            <div class="hardware-item">
+                <div class="hardware-icon">💿</div>
+                <h4>Storage</h4>
+                <p>500GB HDD</p>
+            </div>
+            <div class="hardware-item">
+                <div class="hardware-icon">⚡</div>
+                <h4>PSU</h4>
+                <p>Varro Ezmax 600W</p>
+            </div>
+            <div class="hardware-item">
+                <div class="hardware-icon">🔌</div>
+                <h4>Server PC</h4>
+                <p>Old Laptop (Debian)</p>
+            </div>
+            <div class="hardware-item">
+                <div class="hardware-icon">📱</div>
+                <h4>Network</h4>
+                <p>WiFi Router</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Get In <span class="title-accent">Touch</span></h2>
+            <p>Let's connect and learn together</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Talk!</h3>
+                <p>
+                    I'm always excited to meet new people who share similar interests! 
+                    Whether you want to chat about tech, share knowledge, or collaborate on projects, 
+                    feel free to reach out.
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:example@email.com" class="contact-method">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <span>example@email.com</span>
+                        </div>
+                    </a>
+                    <a href="#" class="contact-method">
+                        <span class="contact-icon">💬</span>
+                        <div>
+                            <strong>Discord</strong>
+                            <span>YourDiscord#0000</span>
+                        </div>
+                    </a>
+                    <a href="#" class="contact-method">
+                        <span class="contact-icon">🐙</span>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>github.com/yourusername</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span class="footer-year">2026</span> Adudu. Built with passion and curiosity.</p>
+        <div class="social-links">
+            <a href="#" title="GitHub">🐙</a>
+            <a href="#" title="Discord">💬</a>
+            <a href="#" title="Email">📧</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
